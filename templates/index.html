@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}تسجيل مراجعة كتاب{% endblock %}
+
+{% block content %}
+    <h2>تسجيل مراجعة كتاب جديد</h2>
+    <form action="{{ url_for('add_review') }}" method="post">
+        <div>
+            <label for="title">عنوان الكتاب *</label>
+            <input type="text" id="title" name="title" required />
+        </div>
+        <div>
+            <label for="author">المؤلف *</label>
+            <input type="text" id="author" name="author" required />
+        </div>
+        <div>
+            <label for="year">سنة النشر</label>
+            <input type="text" id="year" name="year" placeholder="مثال: 2020" />
+        </div>
+        <div>
+            <label for="reading_date">تاريخ القراءة</label>
+            <input type="text" id="reading_date" name="reading_date" placeholder="مثال: يوليو 2025" />
+        </div>
+        <div>
+            <label for="review_text">مراجعتك *</label>
+            <textarea id="review_text" name="review_text" required></textarea>
+        </div>
+        <button type="submit">حفظ المراجعة</button>
+    </form>
+
+    <a href="{{ url_for('reviews') }}" style="display:inline-block; margin-top:20px; color:#007bff; text-decoration:none;">عرض جميع المراجعات</a>
+
+    <!-- أزرار المشاركة الاجتماعية -->
+    <div class="share-buttons" style="margin-top: 30px; border-top: 1px solid #ccc; padding-top: 15px; text-align: center; direction: ltr;">
+        <button onclick="copyCurrentUrl()" style="background-color: #17a2b8; color: white; padding: 8px 14px; border: none; border-radius: 4px; cursor: pointer; margin: 0 8px;">
+            نسخ رابط الصفحة
+        </button>
+        <a href="mailto:galamoudi@gmail.com?subject=مشاركة مراجعة كتاب&body=مرحباً، أود مشاركتك هذه الصفحة: {{ request.url }}" 
+           style="background-color: #dc3545; color: white; padding: 8px 14px; border-radius: 4px; text-decoration: none; margin: 0 8px; display: inline-block;">
+            مشاركة عبر البريد
+        </a>
+    </div>
+
+    <script>
+        function copyCurrentUrl() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('تم نسخ رابط الصفحة: ' + url);
+            }).catch(() => {
+                alert('حدث خطأ أثناء النسخ.');
+            });
+        }
+    </script>
+{% endblock %}

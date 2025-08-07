@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إضافة كتاب</title>
+</head>
+<body>
+    <h2>إضافة كتاب جديد</h2>
+    <form method="POST">
+        <label>عنوان الكتاب:</label><br>
+        <input type="text" name="title"><br><br>
+
+        <label>اسم المؤلف:</label><br>
+        <input type="text" name="author"><br><br>
+
+        <label>سنة النشر:</label><br>
+        <input type="text" name="year"><br><br>
+
+        <label>تاريخ القراءة:</label><br>
+        <input type="text" name="date"><br><br>
+
+        <label>مراجعتك أو ملاحظاتك:</label><br>
+        <textarea name="review"></textarea><br><br>
+
+        <label>تقييم النجوم (1 إلى 5):</label><br>
+        <input type="number" name="rating" min="1" max="5"><br><br>
+
+        <label>رابط صورة الغلاف (اختياري):</label><br>
+        <input type="text" name="cover"><br><br>
+
+        <button type="submit">💾 حفظ</button>
+    </form>
+</body>
+</html>

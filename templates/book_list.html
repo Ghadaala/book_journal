@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>قائمة الكتب</title>
+</head>
+<body>
+    <h2>قائمة كتبي المقروءة</h2>
+    <a href="{{ url_for('add_book') }}">➕ أضف كتابًا</a><br><br>
+    {% for book in books %}
+        <div style="border:1px solid #ccc; margin-bottom:15px; padding:10px;">
+            {% if book.cover %}
+                <img src="{{ book.cover }}" width="100"><br>
+            {% endif %}
+            <strong>{{ book.title }}</strong> ({{ book.year }})<br>
+            المؤلف: {{ book.author }}<br>
+            📅 التاريخ: {{ book.date }}<br>
+            ⭐ التقييم: {{ book.rating }} / 5<br>
+            📝 مراجعة: {{ book.review }}<br>
+        </div>
+    {% endfor %}
+</body>
+</html>
