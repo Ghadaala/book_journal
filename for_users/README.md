@@ -19,6 +19,11 @@ This folder contains everything you need to run the **Book Journal** application
 3.  **Launch the Application:**
     * Double-click the file named `run.bat`.
     * The application window will open and you can start using it to track your book reviews!
+    * Acsess to database reviews using DB Browser for SQLite.
+      download from link:https://sqlitebrowser.org/ 
+
+      <img width="99" height="155" alt="image" src="https://github.com/user-attachments/assets/1b02bc50-2ef1-48fe-aa50-d6d1097886b3" />
+
 
 ---
 
@@ -39,3 +44,7 @@ This folder contains everything you need to run the **Book Journal** application
 3.  **تشغيل التطبيق:**
     * انقر مرتين على الملف الذي اسمه `run.bat`.
     * ستفتح نافذة التطبيق ويمكنك البدء باستخدامه لتسجيل مراجعات كتبك!
+    * وصول مباشر لقاعدة البيانات: يمكن للمستخدمين الوصول إلى جميع المراجعات التي قاموا بإدخالها في قاعدة البيانات على شكل جداول باستخدام برنامج خارجي مثل DB Browser for SQLite.
+    * يتم تحميل برنامج قاعدة البيانات على الرابط التالي: https://sqlitebrowser.org/
+    * <img width="98" height="148" alt="image" src="https://github.com/user-attachments/assets/b4437010-6410-403a-8994-b5a9173bc979" />
+
