@@ -105,9 +105,11 @@ Features:
 
 # Developer Guide:Getting Started
 
-Follow these steps to set up the development environment and run the application.
-##1. PrerequisitesMake sure you have Python 3.x installed on your machine.
-##2.  Setting up the Virtual Environment
+Follow these steps to set up the development environment and run the application:
+
+## 1. PrerequisitesMake sure you have Python 3.x installed on your machine.
+
+## 2.  Setting up the Virtual Environment
    It is recommended to use a virtual environment to isolate the project's libraries.
  Create the virtual environment
 python -m venv venv
@@ -119,8 +121,12 @@ On macOS and Linux
 source venv/bin/activate
 <img width="794" height="272" alt="image" src="https://github.com/user-attachments/assets/d4fd66ed-1ba3-4523-aa29-0c1ceb989230" />
 
-##3. Installing DependenciesOnce the virtual environment is active, install all the libraries listed in the requirements.txt file:pip install -r requirements.txt
-##4. Project StructureTo help you understand the file and folder structure:.
+## 3. Installing DependenciesOnce the virtual environment is active, install all the libraries listed in the requirements.txt file:
+pip install -r requirements.txt
+<img width="578" height="97" alt="image" src="https://github.com/user-attachments/assets/51e3e4de-c3cd-4955-9bea-72d7dac88c7e" />
+
+## 4. Project StructureTo help you understand the file and folder structure:.
+
 ├── instance/               # Folder for application data (like the database)
 ├── reviews.db              # SQLite database file
 ├── static/                 # CSS, JS, images
@@ -134,7 +140,7 @@ source venv/bin/activate
 
 <img width="926" height="348" alt="image" src="https://github.com/user-attachments/assets/80e4f736-3fdf-44ea-aa50-f3ad7be0d3d7" />
 
-##5. Running the ApplicationYou can run the application using Flask commands:# Specify the application file
+## 5. Running the ApplicationYou can run the application using Flask commands:# Specify the application file
  On Windows
 set FLASK_APP=app.py
 
