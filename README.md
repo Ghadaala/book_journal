@@ -63,10 +63,10 @@ pip install -r requirements.txt
 يمكنك تشغيل التطبيق باستخدام أوامر Flask:
 
 # تحديد ملف التطبيق
-# على نظام Windows
+على نظام Windows
 set FLASK_APP=app.py
 
-# على نظام macOS و Linux
+على نظام macOS و Linux
 export FLASK_APP=app.py
 
 # تشغيل التطبيق
@@ -84,11 +84,9 @@ http://127.0.0.1:5000/
 
 # المساهمة:
 
-نرحب بمساهماتك لتحسين هذا المشروع! يمكنك:
-
-فتح مشكلة (Issue) للإبلاغ عن خطأ أو اقتراح ميزة جديدة.
-
-إنشاء طلب سحب (Pull Request) لإضافة تعديلاتك.
+* نرحب بمساهماتك لتحسين هذا المشروع! يمكنك:
+* فتح مشكلة (Issue) للإبلاغ عن خطأ أو اقتراح ميزة جديدة.
+* إنشاء طلب سحب (Pull Request) لإضافة تعديلاتك.
 -----------------------------------------------
 # Book JournalProject
 Description: A simple desktop application developed using the Flask framework and SQLite. Its purpose is to help users record their reviews and impressions of the books they read, with the ability to browse and edit them easily.
