@@ -28,10 +28,11 @@
 python -m venv venv
 
 تفعيل البيئة الافتراضية
-على نظام Windows
+* على نظام Windows: 
 venv\Scripts\activate
- على نظام macOS و Linux
+* على نظام macOS و Linux: 
 source venv/bin/activate
+
 
 <img width="863" height="272" alt="image" src="https://github.com/user-attachments/assets/ec232923-2033-439c-9e8f-73da0ecab798" />
 
@@ -90,7 +91,7 @@ http://127.0.0.1:5000/
 -----------------------------------------------
 # Book JournalProject
 Description: A simple desktop application developed using the Flask framework and SQLite. Its purpose is to help users record their reviews and impressions of the books they read, with the ability to browse and edit them easily.
-Features:
+# Features:
 * Add New Review: Ability to enter the book's name, author, and review rating.
 * Local Database: All data is saved in a local SQLite database file (reviews.db), ensuring easy management and organization.
 * Simple User Interface: A clean and easy-to-use design.
